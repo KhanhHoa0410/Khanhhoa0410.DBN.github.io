@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>DBN-VN</title>
+</head>
+
+<body>
+    <section class="header-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-2">
+                    <div class="logo-header">
+                        <div class="img-logo d-lg-flex d-md-none d-none">
+                            <a href="index.html"><img src="image/logo (1) 1.png" alt=""></a>
+                        </div>
+                        <div class="title d-lg-flex d-md-none d-none">
+                            <a href="index.html">
+                                <h1>Giải pháp và thiết bị</h1>
+                                <h2>cho các ngành công nghiệp</h2>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="hamburger d-lg-none d-md-flex d-none">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-8 form-search">
+                    <form action="search-all" class="d-lg-flex d-md-none d-none">
+                        <select name="list" id="">
+                            <option value="">Loại sản phẩm</option>
+                            <option value="">Loại 1</option>
+                            <option value="">Loại 2</option>
+                            <option value="">Loại 3</option>
+                        </select>
+                        <input type="text" placeholder="Nhập tìm kiếm bằng từ khóa">
+                        <button><i class="fa-solid fa-magnifying-glass" style="color: #EE243C;"></i></button>
+                    </form>
+                    <div class="img-logo-md d-lg-none d-md-block d-block">
+                        <a href="index.html"><img src="image/logo (1) 1.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-2">
+                    <div class="phone-number-header d-lg-flex d-md-none d-none">
+                        <i class="fa-solid fa-phone-volume" style="color: #fff; background-color: red;"></i><a
+                            href="tell:0818228669">0818228669</a>
+                    </div>
+                    <div class="search-btn d-lg-none d-md-flex d-flex">
+                        <i class="fa-solid fa-magnifying-glass fa-xl"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="header-bottom d-lg-flex d-md-none d-none">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 p-0">
+                        <div class="list-product-dropdown d-lg-flex d-md-none d-none">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Danh mục sản phẩm
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item" href="#">Van Công Nghiệp</a></li>
+                                <li><a class="dropdown-item" href="#">Đo Áp Suất</a></li>
+                                <li><a class="dropdown-item" href="#">Đo Nhiệt Độ</a></li>
+                                <li><a class="dropdown-item" href="#">Đo Lưu Lượng</a></li>
+                                <li><a class="dropdown-item" href="#">Phụ Kiện Đường Ống</a></li>
+                                <li><a class="dropdown-item" href="#">Đèn Led Dây</a></li>
+                                <li><a class="dropdown-item" href="#">Phụ Kiện Đường Ống</a></li>
+                                <li><a class="dropdown-item" href="#">Động Cơ - Drive</a></li>
+                                <li><a class="dropdown-item" href="#">Đo Lực, Load Cell</a></li>
+                                <li><a class="dropdown-item" href="#">Công Tắc, Rơ Le, Cầu Trì</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-9">
+                        <nav class="navbar navbar-expand navbar-light d-lg-flex d-md-none d-none">
+                            <div class="container-fluid">
+                                <a class="navbar-brand" href="index.html"><i class="fa-solid fa-house"
+                                        style="color: #ffff;"></i></a>
+                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                    aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                        <li class="nav-item">
+                                            <a class="nav-link" aria-current="page" href="#">Giới thiệu</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" aria-current="page" href="product.html">Sản phẩm</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" aria-current="page" href="service.html">Dịch vụ</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="news.html" tabindex="-1" aria-disabled="true">Tin
+                                                tức</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="project.html" tabindex="-1"
+                                                aria-disabled="true">Dự án</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="solution.html" tabindex="-1"
+                                                aria-disabled="true">Giải pháp</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="contact.html" tabindex="-1"
+                                                aria-disabled="true">Liên hệ</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <section class="bread">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html"><i class="fa-solid fa-house"
+                                style="color: #000;"></i></a></li>
+                    <li class="breadcrumb-item " aria-current="page">CONDUCTIX</li>
+                    <li class="breadcrumb-item active" aria-current="page">Sạc</li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+    <section class="info-product">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7">
+                    <div class="slide-ifproduct">
+                        <div class="slider-nav">
+                            <div class="img-info">
+                                <img src="image/133384481582087451.png" alt="">
+                            </div>
+                            <div class="img-info">
+                                <img src="image/133414722295165584.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="slider-for">
+                            <div class="img-info">
+                                <img src="image/133384481582087451.png" alt="">
+                            </div>
+                            <div class="img-info">
+                                <img src="image/133414722295165584.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="accordion" class="accordion mt-3 d-lg-block d-none">
+                        <div class="card mb-0 rounded-0 border-0">
+                            <div class="card-header collapsed" data-bs-toggle="collapse" href="#collapseExample1"
+                                role="button" aria-expanded="false" aria-controls="collapseExample">
+                                <a class="card-title font-weight-bold" data-bs-toggle="collapse"
+                                    href="#collapseExample1" role="button" aria-expanded="false"
+                                    aria-controls="collapseExample"> Mô tả sản phẩm </a>
+                            </div>
+                            <div id="collapseExample1" class="collapse" data-parent="#accordion">
+                                <div class="card-body">
+                                    <p style="text-align: justify;">Kết quả ấn tượng cho các nhiệm vụ máy đòi hỏi và các
+                                        ứng
+                                        dụng đơn trục hoặc đa trục.<br>
+                                        Biến tần servo loạt 9400 cho chuyển động được điều khiển và động.</p>
+
+                                    <p><strong>Dữ liệu hiệu suất:</strong></p>
+
+                                    <p>Ổ đĩa đơn: 0,37 đến 240 kW / 1,5 đến 460 A<br>
+                                        Đa ổ đĩa: 0,37 đến 30 kW / 1,5 đến 59 A<br>
+                                        Đặc biệt thích hợp cho: chế biến các vật liệu liên tục trong ngành công nghiệp
+                                        bao
+                                        bì, web giấy đục lỗ trong ngành công nghiệp in ấn, quanh co trong ngành công
+                                        nghiệp
+                                        dệt may, công nghệ lưu trữ trong lĩnh vực intralogistics.</p>
+
+                                    <p><strong>Ưu điểm:</strong></p>
+
+                                    <p>Kết nối: bắt đầu / dừng, đầu vào / đầu ra tương tự (2/2), đầu vào / đầu ra kỹ
+                                        thuật
+                                        số có thể lập trình tự do (8/4)<br>
+                                        Bộ giải mã và đầu vào đa bộ mã hóa đa năng<br>
+                                        Giao tiếp: CANopen, DeviceNet, EtherCAT, Ethernet, EtherNet / IP, POWERLINK,
+                                        PROFIBUS, PROFINET<br>
+                                        Hỗ trợ động cơ đồng bộ và không đồng bộ<br>
+                                        Tích hợp phanh quản lý<br>
+                                        Bộ nhớ có thể mở rộng nhờ vào nhiều mô đun bộ nhớ<br>
+                                        Các chức năng công nghệ linh hoạt và có thể cấu hình tự do, ví dụ: để định vị
+                                        bảng,
+                                        điều khiển định vị, hộp số điện tử và cam<br>
+                                        Chức năng an toàn có thể mở rộng</p>
+
+                                    <p><img alt="" height="158" src="/images/upload/images/image(24).png" width="271">
+                                    </p>
+
+                                    <p><img alt="" height="177" src="/images/upload/images/image(25).png" width="262">
+                                    </p>
+
+                                    <p><img alt="" height="179" src="/images/upload/images/image(26).png" width="264">
+                                    </p>
+
+                                </div>
+                                <div class="view-all text-center showdetail">
+                                    <i class="fas fa-caret-down"></i> Xem thêm
+                                </div>
+                                <div class="view-all text-center hidedetail" style="display: none;">
+                                    <i class="fas fa-caret-up"></i> Ẩn bớt
+                                </div>
+                            </div>
+                            <div class="card-header collapsed" data-bs-toggle="collapse" href="#collapseExample2"
+                                role="button" aria-expanded="false" aria-controls="collapseExample">
+                                <a class="card-title font-weight-bold" data-bs-toggle="collapse"
+                                    href="#collapseExample2" role="button" aria-expanded="false"
+                                    aria-controls="collapseExample"> Chính sách bảo hành </a>
+                            </div>
+                            <div id="collapseExample2" class="collapse" data-parent="#accordion">
+                                <div class="col-12 mt-3">
+                                    <p class="alert alert-success small">Nội dung hiện chưa được cập nhật. Vui lòng quay
+                                        lại
+                                        sau !!!!</p>
+                                </div>
+                            </div>
+                            <div class="card-header collapsed" data-bs-toggle="collapse" href="#collapseExample3"
+                                role="button" aria-expanded="false" aria-controls="collapseExample">
+                                <a class="card-title font-weight-bold" data-bs-toggle="collapse"
+                                    href="#collapseExample3" role="button" aria-expanded="false"
+                                    aria-controls="collapseExample"> Chính sách đổi trả </a>
+                            </div>
+                            <div id="collapseExample3" class="collapse" data-parent="#accordion">
+                                <div class="col-12 mt-3">
+                                    <p class="alert alert-success small">Nội dung hiện chưa được cập nhật. Vui lòng quay
+                                        lại
+                                        sau !!!!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-5">
+                    <div class="detailproduct">
+                        <h1>BỘ ĐIỀU KHIỂN HƯỚNG DẪN WEB DP-20 PLUS - MAXCESS</h1>
+                        <div class="status">Còn hàng</div>
+                        <div class="id-product">Mã sản phẩm: DP-20, DP-30,DP-6620, H-6600, H-6610</div>
+                        <div class="advantage ml-0">
+                            - Màn hình sáng, có đèn nền – lý tưởng cho môi trường tối
+                            <br>- Hiệu suất tối ưu đáp ứng giá trị tối ưu
+                            <br>
+                        </div>
+                        <div class="detail-info d-flex">
+                            <strong class="w-25 d-block">Danh mục: </strong>
+                            <a href="product.html">MAXCESS</a>
+                        </div>
+                        <div class="detail-info d-flex">
+                            <strong class="w-25 d-block">Brand: </strong>
+                            <a href="product.html">MAXCESS</a>
+                        </div>
+                        <div class="quantity d-flex align-items-center">
+                            <strong>Số lượng:</strong>
+                            <div class="product-count ml-3">
+                                <div class="nice-number"><button type="button" class="btn btn-light">-</button><input
+                                        type="text" value="1" min="1" id="number" name="quantity"
+                                        class="nice-number text-center detail-quantity border-0 mb-0" maxlength="4"
+                                        data-nice-number-initialized="true"><button type="button"
+                                        class="btn btn-light">+</button></div>
+                            </div>
+                        </div>
+                        <a class="buy" href="">
+                            <div class="btn-buyproduct">
+                                Liên hệ mua hàng
+                            </div>
+                        </a>
+                        <div class="commit">
+                            <div class="img-comit"><img src="image/comit.png" alt=""></div>
+                            <div class="content-comit">
+                                <div class="title">BẢO HÀNH CHÍNH HÃNG</div>
+                                <div class="content">Sản phẩm được bảo hành chính hãng 2 năm.</div>
+                            </div>
+                        </div>
+                        <div class="commit">
+                            <div class="img-comit"><img src="image/comit 1.png" alt=""></div>
+                            <div class="content-comit">
+                                <div class="title">HỖ TRỢ LẮP ĐẶT CÓ TÍNH PHÍ</div>
+                                <div class="content">Áp dụng tại Hà Nội</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="product">
+        <div class="container">
+            <div class="section-title bg-light rounded">
+                <p class="mb-0">Van Công Nghiệp</p>
+                <a href="/phu-kien-duong-ong">Xem tất cả &gt;&gt;</a>
+            </div>
+            <div class="slide-product">
+                <div class="card product-item ">
+                    <div class="card-thuml">
+                        <a href="detailproduct.html">
+                            <img class="card-img-top lazyloaded" src="image/133384481582087451.png"
+                                alt="Bộ điều khiển hướng dẫn web DP-20 Plus - Maxcess">
+                        </a>
+                    </div>
+                    <div class="card-body">
+                        <a href="detailproduct.html" class="card-text">Bộ điều khiển hướng dẫn web DP-20 Plus -
+                            Maxcess</a>
+                        <div class="card-price mt-lg-2 mt-md-2">
+                            <p class="text-danger">Liên hệ</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card product-item ">
+                    <div class="card-thuml">
+                        <a href="detailproduct.html">
+                            <img class="card-img-top lazyloaded" src="image/133384481582087451.png"
+                                alt="Bộ điều khiển hướng dẫn web DP-20 Plus - Maxcess">
+                        </a>
+                    </div>
+                    <div class="card-body">
+                        <a href="detailproduct.html" class="card-text">Bộ điều khiển hướng dẫn web DP-20 Plus -
+                            Maxcess</a>
+                        <div class="card-price mt-lg-2 mt-md-2">
+                            <p class="text-danger">Liên hệ</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card product-item ">
+                    <div class="card-thuml">
+                        <a href="detailproduct.html">
+                            <img class="card-img-top lazyloaded" src="image/133384481582087451.png"
+                                alt="Bộ điều khiển hướng dẫn web DP-20 Plus - Maxcess">
+                        </a>
+                    </div>
+                    <div class="card-body">
+                        <a href="detailproduct.html" class="card-text">Bộ điều khiển hướng dẫn web DP-20 Plus -
+                            Maxcess</a>
+                        <div class="card-price mt-lg-2 mt-md-2">
+                            <p class="text-danger">Liên hệ</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card product-item ">
+                    <div class="card-thuml">
+                        <a href="detailproduct.html">
+                            <img class="card-img-top lazyloaded" src="image/133384481582087451.png"
+                                alt="Bộ điều khiển hướng dẫn web DP-20 Plus - Maxcess">
+                        </a>
+                    </div>
+                    <div class="card-body">
+                        <a href="detailproduct.html" class="card-text">Bộ điều khiển hướng dẫn web DP-20 Plus -
+                            Maxcess</a>
+                        <div class="card-price mt-lg-2 mt-md-2">
+                            <p class="text-danger">Liên hệ</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card product-item ">
+                    <div class="card-thuml">
+                        <a href="detailproduct.html">
+                            <img class="card-img-top lazyloaded" src="image/133384481582087451.png"
+                                alt="Bộ điều khiển hướng dẫn web DP-20 Plus - Maxcess">
+                        </a>
+                    </div>
+                    <div class="card-body">
+                        <a href="detailproduct.html" class="card-text">Bộ điều khiển hướng dẫn web DP-20 Plus -
+                            Maxcess</a>
+                        <div class="card-price mt-lg-2 mt-md-2">
+                            <p class="text-danger">Liên hệ</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card product-item ">
+                    <div class="card-thuml">
+                        <a href="detailproduct.html">
+                            <img class="card-img-top lazyloaded" src="image/133384481582087451.png"
+                                alt="Bộ điều khiển hướng dẫn web DP-20 Plus - Maxcess">
+                        </a>
+                    </div>
+                    <div class="card-body">
+                        <a href="detailproduct.html" class="card-text">Bộ điều khiển hướng dẫn web DP-20 Plus -
+                            Maxcess</a>
+                        <div class="card-price mt-lg-2 mt-md-2">
+                            <p class="text-danger">Liên hệ</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card product-item ">
+                    <div class="card-thuml">
+                        <a href="detailproduct.html">
+                            <img class="card-img-top lazyloaded" src="image/133384481582087451.png"
+                                alt="Bộ điều khiển hướng dẫn web DP-20 Plus - Maxcess">
+                        </a>
+                    </div>
+                    <div class="card-body">
+                        <a href="detailproduct.html" class="card-text">Bộ điều khiển hướng dẫn web DP-20 Plus -
+                            Maxcess</a>
+                        <div class="card-price mt-lg-2 mt-md-2">
+                            <p class="text-danger">Liên hệ</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card product-item ">
+                    <div class="card-thuml">
+                        <a href="detailproduct.html">
+                            <img class="card-img-top lazyloaded" src="image/133384481582087451.png"
+                                alt="Bộ điều khiển hướng dẫn web DP-20 Plus - Maxcess">
+                        </a>
+                    </div>
+                    <div class="card-body">
+                        <a href="detailproduct.html" class="card-text">Bộ điều khiển hướng dẫn web DP-20 Plus -
+                            Maxcess</a>
+                        <div class="card-price mt-lg-2 mt-md-2">
+                            <p class="text-danger">Liên hệ</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="card-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9">
+                    <div class="nav-footer">
+                        <ul class="nav">
+                            <li><a href="">giới thiệu</a></li>
+                            <li><a href="">sản phẩm</a></li>
+                            <li><a href="">dịch vụ</a></li>
+                            <li><a href="">tin tức</a></li>
+                            <li><a href="">dự án</a></li>
+                            <li><a href="">giải pháp</a></li>
+                            <li><a href="">liên hệ</a></li>
+                        </ul>
+                    </div>
+                    <div class="info-ft">
+                        <h1>công ty tnhh dbn việt nam</h1>
+                        <p>Địa chỉ: <a href="">Số 1 Lô M1, Khu đô thị Yên Hòa, Phường Yên Hoà, Quận Cầu Giấy, Thành
+                                phố Hà Nội, Việt Nam</a></p>
+                        <p>Hotline: <a href="">0766.168.699</a><a href="">0833.339.839</a></p>
+                        <p>Email: <a href="">contact@dbnvietnam.com</a></p>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="title-footer">
+                        <h1>Fanpage</h1>
+                        <iframe
+                            src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Flangthanghanoiofficial&tabs=timeline&width=340&height=331&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+                            width="250" height="120" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                            allowfullscreen="true"
+                            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                    </div>
+                    <div class="link-social">
+                        <ul>
+                            <li><a href=""><i class="fa-brands fa-square-facebook"></i></a></li>
+                            <li><a href=""><i class="fa-brands fa-google-plus-g"></i></a></li>
+                            <li><a href=""><i class="fa-brands fa-skype"></i></a></li>
+                            <li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
